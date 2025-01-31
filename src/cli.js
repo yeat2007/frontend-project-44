@@ -7,4 +7,5 @@ export function hello(){
     const name = readlineSync.question('Your answer: ');
 
     console.log('Hello, ' + name + '!')
+    return(name)
 }
