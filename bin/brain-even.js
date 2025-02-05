@@ -9,23 +9,23 @@ export function isEven(name){
         let num = Math.floor(Math.random() * 100);
 
         
-        let cAnsver = ''
+        let cAnswer = ''
         if (num%2 === 0){
-            cAnsver = 'yes'
+            cAnswer = 'yes'
         } 
         else{
-            cAnsver = 'no'
+            cAnswer = 'no'
         }
 
         console.log('Question: '+num)
-        const answer = readlineSync.question('Your ansver: ');
+        const answer = readlineSync.question('Your answer: ');
     
-        if (answer === cAnsver){
+        if (answer === cAnswer){
             counter +=1
             console.log('Correct!')
         } 
         else{
-            console.log(`'${answer}' is wrong answer ;(. Correct answer was '${cAnsver}'.`)
+            console.log(`'${answer}' is wrong answer ;(. Correct answer was '${cAnswer}'.`)
             console.log(`Let's try again, ${name}!`)    
             break
         }
