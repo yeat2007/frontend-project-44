@@ -18,11 +18,11 @@ export function gameRounds (getQuestAndAnswer, rules) {
         cAnswersCount += 1
     } else {
         console.log('' + userAnswer + ' is wrong answer ;(. Correct answer was ' + cAnswer + '.')
-        console.log("Let's try again, " + name + " !")
+        console.log("Let's try again, " + name + "!")
         return
     }
     }
-    console.log('Congratulations, ' + name + ' !')
+    console.log('Congratulations, ' + name + '!')
 
 };
     
