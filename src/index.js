@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 import hello  from '../src/cli.js';
 const name = hello();
-export function gameRounds (getQuestAndAnswer, rules) {
+export function gameRounds (getQuestAndAnswer, rules) 
+return name; 
+{
 
     console.log(rules);
     
