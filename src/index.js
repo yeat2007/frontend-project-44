@@ -1,37 +1,22 @@
-import readlineSync from 'readline-sync';
-import hello  from '../src/cli.js';
-
-
-
-
-
+import readlineSync from 'readline-sync'
+import hello from '../src/cli.js'
 export default function gameRounds(getQuestAndAnswer, rules) {
-  console.log(rules);
-  const name = hello(); 
-
-  let cAnswersCount = 0;
-  const rounds = 3;
-
+  console.log(rules)
+  const name = hello()
+  let cAnswersCount = 0
+  const rounds = 3
   while (cAnswersCount < rounds) {
-    const [quest, cAnswer] = getQuestAndAnswer();
-    console.log(`Question: ${quest}`);  
-  const userAnswer = readlineSync.question('Your answer: ');
-
+    const [quest, cAnswer] = getQuestAndAnswer()
+    console.log(`Question: ${quest}`)
+  const userAnswer = readlineSync.question('Your answer: ')
     if (cAnswer === userAnswer) {
-      console.log('Correct!');
-      cAnswersCount += 1;
+      console.log('Correct!')
+      cAnswersCount += 1
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${cAnswer}.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${cAnswer}.`)
+      console.log(`Let's try again, ${name}!`)
+      return
     }
   }
-
-  console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`)
 }
-
-
-
-
-
-
