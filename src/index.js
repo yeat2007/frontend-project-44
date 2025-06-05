@@ -13,7 +13,7 @@ return name;
     const rounds = 3
     while (cAnswersCount < rounds) {
         const [quest, cAnswer] = getQuestAndAnswer()
-        console.log(`Question: ${number}`);
+        console.log(`Question: ${quest}`);
         const userAnswer = readlineSync.question('Your answer: ')
   
     if (cAnswer === userAnswer) {
