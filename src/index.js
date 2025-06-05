@@ -4,7 +4,7 @@ const name = hello();
 export function gameRounds (getQuestAndAnswer, rules){
 return name; 
 }
-{
+
 
     console.log(rules);
     
