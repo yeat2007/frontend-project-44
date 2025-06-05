@@ -22,3 +22,4 @@ export const getQuestAndAnswer = () => {
   const answer = String(getCount(num, randomOperator, num2))
   return [quest, answer]
 }
+console.log(`Question: ${num1} ${operator} ${num2}`)
