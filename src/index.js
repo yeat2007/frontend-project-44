@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 import hello  from '../src/cli.js';
 const name = hello();
-export function gameRounds (getQuestAndAnswer, rules) 
+export function gameRounds (getQuestAndAnswer, rules){
 return name; 
+}
 {
 
     console.log(rules);
@@ -12,7 +13,7 @@ return name;
     const rounds = 3
     while (cAnswersCount < rounds) {
         const [quest, cAnswer] = getQuestAndAnswer()
-        console.log('Question: ' + quest + '')
+        console.log('Question: ${quest}')
         const userAnswer = readlineSync.question('Your answer: ')
   
     if (cAnswer === userAnswer) {
