@@ -7,15 +7,15 @@ import hello  from '../src/cli.js';
 
 export default function gameRounds(getQuestAndAnswer, rules) {
   console.log(rules);
-  const name = hello(); // перенесём сюда
+  const name = hello(); 
 
   let cAnswersCount = 0;
   const rounds = 3;
 
   while (cAnswersCount < rounds) {
     const [quest, cAnswer] = getQuestAndAnswer();
-    console.log(`Question: ${quest}`);  // <--- ❗️здесь была ошибка: ты писал `number` вместо `quest`
-    const userAnswer = readlineSync.question('Your answer: ');
+    console.log(`Question: ${quest}`);  
+  const userAnswer = readlineSync.question('Your answer: ');
 
     if (cAnswer === userAnswer) {
       console.log('Correct!');
