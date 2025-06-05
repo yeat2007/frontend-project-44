@@ -6,8 +6,8 @@ export default function gameRounds(getQuestAndAnswer, rules) {
   let cAnswersCount = 0
   const rounds = 3
   while (cAnswersCount < rounds) {
-    const [quest, cAnswer] = getQuestAndAnswer()
-    console.log(`Question: ${quest}`)
+  const [quest, cAnswer] = getQuestAndAnswer()
+  console.log(`Question: ${quest}`)
   const userAnswer = readlineSync.question('Your answer: ')
     if (cAnswer === userAnswer) {
       console.log('Correct!')
