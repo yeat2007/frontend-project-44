@@ -5,7 +5,7 @@ import hello  from '../src/cli.js';
 
 
 
-export function gameRounds(getQuestAndAnswer, rules) {
+export default function gameRounds(getQuestAndAnswer, rules) {
   console.log(rules);
   const name = hello(); // перенесём сюда
 
