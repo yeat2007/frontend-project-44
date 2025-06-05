@@ -9,12 +9,12 @@ const isPrime = (num) => {
     if (num % i === 0) return false;
   }
   return true;
-};
+}
 
 export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 export function getQuestAndAnswer(){
 
-    const quest = randomNum()
-    const answer = isPrime(quest) ? "yes" : "no";
-    return[quest, answer]
+    const quest = randomNum();
+    const answer = isPrime(quest) ? 'yes' : 'no';
+    return[quest, answer];
 }
