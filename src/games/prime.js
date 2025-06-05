@@ -16,8 +16,7 @@ const isPrime =(num) =>{
 export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 export function getQuestAndAnswer() {
 
-    const number = randomNum()
-    const quest = num
-    const answer = isPrime(num)
+    const quest = randomNum()
+    const answer = isPrime(quest) ? "yes" : "no";
     return[quest, answer]
 }
