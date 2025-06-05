@@ -2,7 +2,7 @@ import randomNum from '../utils.js'
 const getCount = (randomNum, operator, randomNum2) => {
   switch (operator) {
     case '+':
-     return randomNum + randomNum2
+      return randomNum + randomNum2
     case '*':
       return randomNum * randomNum2
     case '-':
