@@ -12,7 +12,7 @@ export default function gameRounds(getQuestAndAnswer, rules) {
     if (cAnswer === userAnswer) {
       console.log('Correct!')
       cAnswersCount += 1
-    } 
+    }
     else {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${cAnswer}.`)
       console.log(`Let's try again, ${name}!`)
