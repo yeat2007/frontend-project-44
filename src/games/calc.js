@@ -9,17 +9,15 @@ const getCount = (randomNum, operator, randomNum2) => {
             return randomNum - randomNum2
         default: return 'Error'
     }
+}
 export const rule = 'What is the result of the expression?'
 export const getQuestAndAnswer = () => {
     const point = ['+', '-', '*']
     const randomPoint = Math.floor(Math.random() * 3)
     const randomOperator = point[randomPoint]
-
-  const num = randomNum()
+  const num1 = randomNum()
   const num2 = randomNum()
-
-  const quest = `${num} ${randomOperator} ${num2}`
-  const answer = String(getCount(num, randomOperator, num2))
+  const quest = `Question: ${num1} ${randomOperator} ${num2}`
+  const answer = String(getCount(num1, randomOperator, num2))
   return [quest, answer]
 }
-console.log(`Question: ${num1} ${operator} ${num2}`)
