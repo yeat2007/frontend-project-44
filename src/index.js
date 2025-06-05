@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 import hello  from '../src/cli.js';
-const name = hello();
 
 
 
